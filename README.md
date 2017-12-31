@@ -3,7 +3,10 @@ docker-gen
 
 This is a fork of original [docker-gen](https://github.com/jwilder/docker-gen) which always installs the **latest** version of `docker-gen`.
 
-Additionally it includes latest Alpine `bash` and `cli53`, a command line tool for Amazon Route 53. See https://github.com/barnybug/cli53 for more information on this.
+Additionally it includes latest Alpine `bash`, `aws cli` (AWS Command Line Interface) and `cli53` (a command line tool for Amazon Route 53).
+
+* AWS CLI: https://aws.amazon.com/cli/?nc1=h_ls
+* cli53: https://github.com/barnybug/cli53
 
 I need it for a special use-case with my infrastructure.
 
