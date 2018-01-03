@@ -4,7 +4,7 @@ LABEL maintainer="Meik Minks <mminks@inox.io>"
 
 ENV DOCKER_HOST unix:///tmp/docker.sock
 
-RUN apk add --no-cache openssl curl jq bash python
+RUN apk add --no-cache openssl curl jq bash python bind-tools
 
 RUN wget -q https://github.com/barnybug/cli53/releases/download/$(curl -L -s -H 'Accept: application/json' https://github.com/barnybug/cli53/releases/latest | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')/cli53-linux-386 -O /usr/local/bin/cli53
 RUN chmod +x /usr/local/bin/cli53
